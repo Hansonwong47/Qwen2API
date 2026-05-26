@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "cd public && npm install && npm run build",
+  "outputDirectory": "public/dist",
   "builds": [
     {
       "src": "src/server.js",
