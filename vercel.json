@@ -1,7 +1,15 @@
 {
-  "installCommand": "npm install && cd public && npm install && npm run build",
-  "buildCommand": null,
-  "outputDirectory": null,
-  "devCommand": null,
-  "framework": "express"
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/server.js"
+    }
+  ]
 }
