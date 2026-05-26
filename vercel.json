@@ -1,7 +1,9 @@
 {
-  "version": 2,
-  "buildCommand": "cd public && npm install && npm run build",
+  "installCommand": "npm install && cd public && npm install && npm run build",
+  "buildCommand": null,
   "outputDirectory": "public/dist",
+  "devCommand": null,
+  "framework": null,
   "builds": [
     {
       "src": "src/server.js",
